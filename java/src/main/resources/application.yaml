@@ -1,0 +1,30 @@
+server:
+  port: 9090
+
+spring:
+  profiles:
+    active: sta
+  application:
+    name: demo
+  # MySQL Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/taskdb
+    username: taskuser
+    password: taskpass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  # Redis Configuration
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+# Custom RocketMQ Property for our Service
+rocketmq:
+  namesrv: 127.0.0.1:9876
+
+

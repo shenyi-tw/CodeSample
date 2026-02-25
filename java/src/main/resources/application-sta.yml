@@ -1,0 +1,10 @@
+# application-sta.yml
+logging:
+  level:
+    root: INFO
+    com.example.demo: OFF
+    org.hibernate.SQL: OFF
+
+spring:
+  jpa:
+    show-sql: false
